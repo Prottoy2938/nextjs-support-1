@@ -4,9 +4,6 @@ import axios from "axios"
 
 
 const Home: React.FC = () => {
-  const passage =
-    "Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware";
-  const question = "What's Google?";
 
   const handleClick = async (): void => {
     axios.post("/api/hello", { data: "Hi there" }).then(res => {

@@ -5,7 +5,7 @@ import axios from "axios"
 
 const Home: React.FC = () => {
 
-  const handleClick = async (): void => {
+  const handleClick = async () => {
     axios.post("/api/hello", { data: "Hi there" }).then(res => {
       console.log(res)
     }).catch(e => {
